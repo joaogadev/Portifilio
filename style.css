@@ -18,7 +18,7 @@ header {
   top: 0;
   width: 100%;
   background: #1f1f1f;
-  padding: 15px 50px;
+  padding: 8px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,10 +30,24 @@ header {
 .logo span {
   color: #fff;
 }
+nav {
+  display: grid;
+  gap: 3px 20px;
+  align-items: end;
+  max-width: 1800px;
+}
+nav .logo {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
 nav ul {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
   list-style: none;
   display: flex;
   gap: 20px;
+  padding: 0;
+  margin: 0;
 }
 nav ul li a {
   color: #fff;
@@ -42,6 +56,12 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: #00bcd4;
+}
+nav > .btn {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  justify-self: end;
+  align-self: center;
 }
 .btn {
   padding: 10px 20px;
@@ -62,7 +82,10 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   padding: 120px 20px 80px;
-  gap: 40px;
+  gap: 60px;
+}
+.hero-text p {
+  margin-bottom: 25px;
 }
 .hero-text h1 {
   font-size: 2.5rem;
@@ -71,8 +94,9 @@ nav ul li a:hover {
   color: #00bcd4;
 }
 .hero-img img {
-  width: 250px;
-  height: 250px;
+  margin-top: 30px;
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #00bcd4;
